@@ -1,0 +1,44 @@
+{
+  "name": "jrls_user",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test": "vue-cli-service build --mode test"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "compression-webpack-plugin": "^3.0.0",
+    "element-ui": "^2.11.0",
+    "js-base64": "^2.4.9",
+    "js-cookie": "^2.2.0",
+    "js-md5": "^0.7.3",
+    "qs": "^6.5.2",
+    "sortablejs": "^1.10.2",
+    "uglifyjs-webpack-plugin": "^2.1.3",
+    "vue": "^2.5.17",
+    "vue-axios": "^2.1.3",
+    "vue-router": "^3.0.1",
+    "vuedraggable": "^2.23.2",
+    "vuex": "^3.0.1",
+    "wangeditor": "^3.1.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0",
+    "@vue/cli-service": "^3.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

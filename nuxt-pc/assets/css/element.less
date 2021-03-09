@@ -1,0 +1,92 @@
+/deep/.dialog{
+    text-align: left;
+    .el-dialog{
+        z-index: 999;
+        .el-dialog__header{
+            padding: 0;
+            .el-dialog__headerbtn{
+                i{
+                    &::before{
+                        padding: 5px;
+                        
+                    }
+                }
+            }
+        }
+        .el-dialog__body{
+            padding: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+    }
+}
+// input 组件边框样式
+/deep/.el-input,/deep/.el-textarea{
+    .el-input__inner, .el-textarea__inner{
+        outline: none!important;
+        border: 1px solid #DAE2F3;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        &:hover{
+            border-color: @themeRed;
+        }
+    }
+}
+// select 组边框样式
+/deep/.el-select{
+    .el-input__inner:focus{
+        border-color: @themeRed!important;
+    }
+}
+// select 组件选中文字样式
+.el-select-dropdown__item.selected {
+    color: @themeRed!important;
+}
+// checkBox 
+/deep/.el-checkbox__input.is-checked+.el-checkbox__label{color: #909399;} 
+/deep/.el-checkbox__label{
+    font-size: 12px !important;
+    color: #909399;
+    font-weight: normal;
+    display: inline-block;
+    padding-left: 5px;
+    line-height: 15px;
+    letter-spacing: normal;
+}
+/deep/.el-checkbox__input.is-checked .el-checkbox__inner{
+    background-color: @themeRed;
+    border-color: @themeRed;
+}
+/deep/.el-checkbox__inner:hover{border-color: @themeRed;}
+/deep/.el-checkbox__input.is-focus .el-checkbox__inner{border-color: @themeRed;}
+
+// 分页
+.pagination-wrap{
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    .el-pagination.is-background{
+        text-align: center;
+        /deep/.btn-prev{
+            background-color: #fff;
+        }
+        /deep/.btn-next{
+            background-color: #fff;
+        }
+        /deep/.el-pager{
+            li{
+                background-color: #fff;
+                &:not(.disabled).active {
+                    background-color: @themeRed;
+                    color: #FFF;
+                }
+                &:not(.active):hover {
+                    color: @themeRed;
+                }
+            }
+        }
+    }
+}
+
+
+

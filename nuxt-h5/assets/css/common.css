@@ -1,0 +1,56 @@
+@charset "utf-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font-family:"微软雅黑"; font-size: 37.5px;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:none; }
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:active{text-decoration:none;}
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+} /* IE < 8 */
+.van-list__loading .van-loading__text{
+    font-size: 26px !important;
+}
+.van-list__placeholder{
+    font-size: 26px !important;
+}
+.swiper-pagination-bullets{
+   /* bottom: -80px; */
+   height: 24px;
+}
+.swiper-pagination > .swiper-pagination-bullet{
+    width: 8px;
+    height: 8px;
+} 
+.swiper-pagination > .swiper-pagination-bullet-active{
+    width: 24px;
+    height: 8px;
+    border-radius: 4px;
+    background: #F50;
+}
+
+
+
